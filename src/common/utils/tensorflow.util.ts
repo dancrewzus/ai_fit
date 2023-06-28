@@ -19,25 +19,9 @@ export class TensorflowUtil {
     }
 
     this.tensorflowModel = tf.sequential()
-    this.tensorflowModel.add(
-      tf.layers.dense({ 
-        inputShape: [ 2 ],
-        units: 64,
-        activation: 'relu'
-      })
-    )
-    this.tensorflowModel.add(
-      tf.layers.dense({
-        units: 64,
-        activation: 'relu'
-      })
-    )
-    this.tensorflowModel.add(
-      tf.layers.dense({
-        units: 1,
-        activation: 'linear'
-      })
-    )
+    this.tensorflowModel.add(tf.layers.dense({ inputShape: [ 2 ], units: 64, activation: 'relu' }))
+    this.tensorflowModel.add(tf.layers.dense({ units: 64, activation: 'relu' }))
+    this.tensorflowModel.add(tf.layers.dense({ units: 1, activation: 'linear' }))
     this.logger.log('Tensorflow model created')
   }
 

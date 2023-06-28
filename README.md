@@ -58,7 +58,7 @@ You can download the application by copying its link, either by ssh or https. Th
 
 # Clone repository
 $ git clone https://github.com/dancrewzus/ai-fit.git
-$ cd fx11_api
+$ cd ai-fit
 
 # If you want to download it with another folder name, example your-folder-name
 $ git clone https://github.com/dancrewzus/ai-fit.git your-folder-name
@@ -68,7 +68,7 @@ $ cd your-folder-name
 
 # Clone repository
 $ git clone git@github.com:dancrewzus/ai-fit.git
-$ cd fx11_api
+$ cd ai-fit
 
 # If you want to download it with another folder name, example your-folder-name
 $ git clone git@github.com:dancrewzus/ai-fit.git your-folder-name
@@ -103,6 +103,9 @@ MONGO_DB_PASSWORD=""
 MONGO_DB_CLUSTER=""
 MONGO_DB_NAME=""
 CONNECTION_STRING=""
+# JSON WEB TOKEN
+JWT_SECRET=""
+JWT_EXPIRES_IN="2h"
 # GENERAL
 DEFAULT_LIMIT=10
 PORT=3000

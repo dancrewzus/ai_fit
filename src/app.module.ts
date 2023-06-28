@@ -8,6 +8,7 @@ import { JoiValidationSchema } from './config/joi.validation'
 import { CommonModule } from './common/common.module'
 import configurationFile from './config/env.config'
 import { SeedModule } from './seed/seed.module'
+import { AuthModule } from './auth/auth.module'
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { SeedModule } from './seed/seed.module'
         uri: process.env.CONNECTION_STRING,
       }),
     }),
+    AuthModule,
     CommonModule,
     SeedModule,
   ],
